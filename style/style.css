@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+#box {
+    background: linear-gradient(to right, #4a8cb5 0%, #5aadce 50%, #428cb5 100%);
+    width: 400px;
+    height: 70px;
+    position: relative;
+}
+
+
+#box svg {
+    transition: all 0.5s;
+    fill: #4A94BD;
+    position: absolute;
+    top: 26px;
+    left: 46px;
+    font-size: 13px;
+    z-index: 3px;
+    opacity: 0.5;
+}
+
+#box input {
+    width: 270px;
+    height: 38px;
+    padding-left: 32px;
+    z-index: 0;
+    outline: none;
+    position: absolute;
+    left: 35px;
+    top: 15px;
+    border-style: none;
+    border-radius: 4px;
+    opacity: 0.5;
+    transition: all 0.5s;
+    color: #9CB6CF;
+    text-shadow: 0px 0px 0px #565657;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#box input:hover {
+    opacity: 1;
+}
+
+#box input:focus {
+    opacity: 1;
+}
+
+#box input:focus+svg {
+    opacity: 1;
+}
+
+#box input:hover+svg {
+    opacity: 1;
+}
+
+#box input::-webkit-input-placeholder {
+    color: #565657;
+}
+
+
+#box ul {
+    transition: all 130ms ease-in;
+    margin-top: 3px;
+    list-style: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    width: 270px;
+    height: 243px;
+    position: absolute;
+    top: 52px;
+    left: 35px;
+    overflow: auto;
+    background-color: white;
+    -webkit-box-shadow: 2px 3px 11px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 3px 11px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 3px 11px 1px rgba(0, 0, 0, 0.75);
+}
+
+#box ul.active {
+    visibility: visible;
+    transform: scaleY(1.0);
+    
+}
+
+#box ul::-webkit-scrollbar
+{
+	width: 5px;
+    background-color: #F5F5F5;
+    height: 0;
+}
+
+
+#box ul::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#box ul::-webkit-scrollbar-thumb
+{
+	border-radius: 100px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #A2A59C;
+}
+
+#box ul>li {
+    display: block;
+    color: #565657;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+#box .list-wrapper .listTopNav {
+    width: 324px;
+    height: 37px;
+    line-height: 37px;
+    text-align: flex-start;
+    vertical-align: center;
+    font-family: 'Bitter';
+    font-size: 15px;
+    color: #888989;
+}
